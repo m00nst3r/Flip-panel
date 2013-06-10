@@ -1,0 +1,43 @@
+/* NEW */
+.flip_panel {
+    -webkit-perspective: 1000;
+    width: 400px;
+    height: 600px;
+    position: relative;
+}
+.flip_panel .block.flipped {
+    -webkit-transform: rotatey(180deg);
+}
+.flip_panel .block {
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+}
+.flip_panel .front {
+    position: absolute;
+    -webkit-backface-visibility: hidden ;
+    z-index: 2;
+}
+.flip_panel .front {
+    position: absolute;
+    z-index: 1;
+    background-color: #ff6573;
+    width: 400px;
+    height: 200px;
+}
+.flip_panel  .back {
+    -webkit-transform: rotatey(-180deg);
+    background-color: #f7f7f7;
+    width: 400px;
+    height: 200px;
+}
+/*.flip_panel .front{*/
+    /*background-color: #ff6573;*/
+    /*height: 200px;*/
+    /*width: 400px;*/
+/*}*/
+/*.flip_panel .back{*/
+    /*background-color: #f7f7f7;*/
+    /*height: 200px;*/
+    /*width: 400px;*/
+/*}*/
