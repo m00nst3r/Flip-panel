@@ -1,21 +1,31 @@
 /* NEW */
 .flip_panel {
     -webkit-perspective: 1000;
+    -o-perspective: 1000;
+    -moz-perspective: 1000;
     width: 400px;
     height: 600px;
     position: absolute;
 }
 .flip_panel .block.flipped {
     -webkit-transform: rotatey(180deg);
+    -o-transform: rotatey(180deg);
+    -moz-transform: rotatey(180deg);
 }
 .flip_panel .block {
     -webkit-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
     -webkit-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
     transition: 1s ease-in-out;
 }
 .flip_panel .front {
     position: absolute;
     -webkit-backface-visibility: hidden ;
+    -o-backface-visibility: hidden ;
+    -moz-backface-visibility: hidden ;
     z-index: 2;
     background-color: #ff6573;
     width: 400px;
@@ -23,8 +33,12 @@
 }
 .flip_panel .back {
     -webkit-transform: rotatey(-180deg);
+    -o-transform: rotatey(-180deg);
+    -moz-transform: rotatey(-180deg);
     background-color: #f7f7f7;
     width: 400px;
     height: 200px;
     -webkit-backface-visibility: hidden ;
+    -o-backface-visibility: hidden ;
+    -moz-backface-visibility: hidden ;
 }

@@ -3,4 +3,4 @@ Flip-panel
 
 Flip-panel
 
-Works only on iPad, iPhone
+Works on Safari, Google Chrome, Firefox and Opera Next
