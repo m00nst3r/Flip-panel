@@ -3,7 +3,7 @@
     -webkit-perspective: 1000;
     width: 400px;
     height: 600px;
-    position: relative;
+    position: absolute;
 }
 .flip_panel .block.flipped {
     -webkit-transform: rotatey(180deg);
@@ -17,15 +17,11 @@
     position: absolute;
     -webkit-backface-visibility: hidden ;
     z-index: 2;
-}
-.flip_panel .front {
-    position: absolute;
-    z-index: 1;
     background-color: #ff6573;
     width: 400px;
     height: 200px;
 }
-.flip_panel  .back {
+.flip_panel .back {
     -webkit-transform: rotatey(-180deg);
     background-color: #f7f7f7;
     width: 400px;
