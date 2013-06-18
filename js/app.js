@@ -6,7 +6,7 @@
  * To change this template use File | Settings | File Templates.
  */
 $(document).ready(function () {
-    $('.flip_panel').on('click touchstart', '.block', function () {
+    $('.flip_panel').on('touchstart', '.block', function () {
         var flipped = $(this).hasClass('flipped');
         $('.flip_panel .block.flipped').removeClass('flipped');
         if (!flipped){

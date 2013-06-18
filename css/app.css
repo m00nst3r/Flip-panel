@@ -9,6 +9,7 @@
 }
 .flip_panel .block.flipped {
     -webkit-transform: rotatey(180deg);
+    transform: rotatey(180deg);
     -o-transform: rotatey(180deg);
     -moz-transform: rotatey(180deg);
 }
